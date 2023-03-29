@@ -48,9 +48,9 @@ gaming_agg_reports_ad_details = temp_table_gaming_agg_reports.write \
   .option("sfPassword", password) \
   .option("sfDatabase", database_name) \
   .option("sfSchema", schema_name) \
-  .option("sfRole", "ADHOC_CONSUMER_PROD") \
+  .option("sfRole", "PROD") \
   .option("column_mapping", "name") \
   .option("sfWarehouse", warehouse_name) \
   .mode("append") \
-  .option("dbtable", "AGG_AGENCY_CUSTOM_DAILY") \
+  .option("dbtable", "DUMMY_TABLE") \
   .save()
