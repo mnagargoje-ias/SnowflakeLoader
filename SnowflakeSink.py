@@ -37,11 +37,7 @@ temp_table_gaming_agg_reports = df.select("HIT_DATE", #Date
                                                   "NOT_IN_VIEW_PASSED_IMPS", #number
                                                   "MEASUREMENT_SOURCE_TYPE",
                                                   "TEAM_ID"
-#                                                   "GROSS_IAS_IMPS",
-#                                                   "GROSS_PM_IMPS",
-#                                                   "GROSS_PM_YT_BS_IMPS",
-#                                                   "PM_YT_BS_VIEWABILITY_COMMON_GIVT_IMPS",
-#                                                   "GROSS_PM_YT_IMPS"
+#                                               
                                          )
 
 gaming_agg_reports_ad_details = temp_table_gaming_agg_reports.write \
