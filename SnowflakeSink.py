@@ -5,7 +5,7 @@ from pyspark.sql import SparkSession, functions, Row, types
 import numpy as np
 
 #define variables required for file location of csv file containing the data for processing...
-file_location = "dbfs:/FileStore/shared_uploads/mnagargoje@integralads.com/snowflake_sample_raw5.csv"
+file_location = "snowflake_sample_raw5.csv"
 file_type = "csv"
 infer_schema = "true"
 first_row_is_header = "true"
