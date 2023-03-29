@@ -22,10 +22,10 @@ df = spark.read\
 
 user = dbutils.secrets.get("data-warehouse", "snowflake-user")
 password = dbutils.secrets.get("data-warehouse", "snowflake-password")
-database_host_url = "ias.us-east-1.snowflakecomputing.com"
-database_name = "CDS_PROD"
-schema_name = "LOOKER_SCRATCH_DEV"
-warehouse_name = "ADHOC_WH"
+database_host_url = "xyz.snowflakecomputing.com"
+database_name = "PROD"
+schema_name = "DEV"
+warehouse_name = "WH"
 
 temp_table_gaming_agg_reports = df.select("HIT_DATE", #Date
                                                   "CAMPAIGN_ID", #number
