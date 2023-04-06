@@ -26,6 +26,7 @@ database_host_url = "xyz.snowflakecomputing.com"
 database_name = "PROD"
 schema_name = "DEV"
 warehouse_name = "WH"
+role_name = "xyz"
 
 temp_table_gaming_agg_reports = df.select("HIT_DATE", #Date
                                                   "CAMPAIGN_ID", #number
